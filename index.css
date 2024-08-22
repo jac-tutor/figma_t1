@@ -27,3 +27,8 @@ div {
     background-color: red;
     border-radius: 100%;
 }
+.bold {
+    width: 140px;
+    font-weight: bold;
+    text-align: right;
+}
