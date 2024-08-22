@@ -10,6 +10,9 @@ div {
 .class2 {
     border:1px solid black;
 }
-.class2 .class1 {
-    color:aqua;
+.btn {
+    border: 1px solid black;
+    padding: 6px 18px;
+    background-color: aquamarine;
+    border-radius: 5px;
 }
