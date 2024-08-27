@@ -90,6 +90,21 @@ console.log("hello aaaa!")
 // console.log(!false) // true
 // console.log(!true) // false
 
+// + - * / %
+console.log(1 + 2) // 3
+console.log(2 - 1) // 1
+let a = 1
+a = a + 1
+console.log(a) // 2
+a += 1
+a++
+console.log(a)
+console.log(3 % 2) // 1
+console.log("a" + "b") // ab
+console.log(0 + "b") // 0b
+console.log(960 + "110") //
+
+// for
 for (let i = 0; i < 10; i++) {
   console.log(i)
 }
