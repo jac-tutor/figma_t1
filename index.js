@@ -89,3 +89,8 @@ console.log("hello aaaa!")
 
 // console.log(!false) // true
 // console.log(!true) // false
+
+for (let i = 0; i < 10; i++) {
+  console.log(i)
+}
+console.log("end for")
