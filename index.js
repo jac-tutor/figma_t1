@@ -111,9 +111,11 @@
 // console.log("end for")
 
 let sum = 0
+function double(num) {
+  return num * 2
+}
+// console.log(double(5))
 for (let i = 1; i <= 10; i++) {
-  if (i % 2 == 1) {
-    sum = sum + i
-  }
+  sum = sum + double(i)
 }
 console.log(sum)
