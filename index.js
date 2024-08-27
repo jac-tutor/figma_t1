@@ -46,3 +46,17 @@ funcB()
 // return 回傳
 const funAresult = funcA(1, 2)
 console.log(funAresult) // 3
+
+// if判斷式
+// else 可選 // else if 可選
+// ==, >, <, >=, <=, !=, ===, !==
+if (2 != 3) {
+  // ...
+}
+// else if (false) {
+//   // ..
+// } else if (false) {
+//   // ..
+// } else {
+//   // ..
+// }
