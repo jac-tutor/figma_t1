@@ -1,17 +1,27 @@
 console.log("hello aaaa!")
 
+// 基礎類別
 // 1
 // "9"
-// true
+// true // false // boolean
 // undefined
 // null
-// [1, 2, 3]
-// { a: 1, b: 2 }
+// [1, 2, 3] // array // [1, 2, 3][0]
+// { a: 1, b: 2 } // object // { a: 1, b: 2 }.a // { a: 1, b: 2 }["a"]
+
+// 宣告
 var a = 1
 var b // function
 let c = "c" // {}
-const d = "d"
+const d = "d" // PI = 3.14
 
+/**
+ * A function that performs some operations and returns the sum of two parameters.
+ *
+ * @param {*} param1 - The first parameter to be added.
+ * @param {*} param2 - The second parameter to be added.
+ * @return {*} The sum of param1 and param2.
+ */
 function funcA(param1, param2) {
   if (true) {
     var aa = "a"
@@ -29,6 +39,10 @@ function funcA(param1, param2) {
   }
   return param1 + param2
 }
+const funcB = function () {}
+// run function
+funcB()
 
+// return 回傳
 const funAresult = funcA(1, 2)
-console.log(funAresult)
+console.log(funAresult) // 3
