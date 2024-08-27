@@ -17,15 +17,15 @@ function funcA(param1, param2) {
     var aa = "a"
     let bb = "b"
     const cc = "c"
-    bb = "dd"
-    bb = 1 + 2
-    bb = true
+    // cc = "dd" // error
+    // console.log(cc)
+    bb = "dd" // "dd"
+    bb = 1 + 2 // 3
+    bb = true // true
     bb = aa // "a"
     bb = function () {
       console.log("hello bb")
-    } // bb()
-    // cc = "dd"
-    // console.log(cc)
+    } // bb() // hello bb
   }
   return param1 + param2
 }
