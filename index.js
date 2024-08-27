@@ -110,12 +110,21 @@
 // }
 // console.log("end for")
 
-let sum = 0
-function double(num) {
-  return num * 2
+// let sum = 0
+// function double(num) {
+//   return num * 2
+// }
+// // console.log(double(5))
+// for (let i = 1; i <= 10; i++) {
+//   sum = sum + double(i)
+// }
+// console.log(sum)
+
+function square(num, n) {
+  let result = num
+  for (let i = 1; i < n; i++) {
+    result = result * num
+  }
+  return result
 }
-// console.log(double(5))
-for (let i = 1; i <= 10; i++) {
-  sum = sum + double(i)
-}
-console.log(sum)
+console.log(square(2, 5))
