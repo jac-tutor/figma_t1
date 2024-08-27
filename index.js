@@ -51,6 +51,11 @@ console.log(funAresult) // 3
 // else 可選 // else if 可選
 // ==, >, <, >=, <=, !=, ===, !==
 // && and, || or // ! not
+// true && true // true
+// true && false // false
+// true || false // true
+// false || false // false
+// !false // true
 if (2 != 3 || 2 < 0) {
   // ...
 }
