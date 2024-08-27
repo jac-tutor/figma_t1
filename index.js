@@ -50,7 +50,8 @@ console.log(funAresult) // 3
 // if判斷式
 // else 可選 // else if 可選
 // ==, >, <, >=, <=, !=, ===, !==
-if (2 != 3) {
+// && and, || or // ! not
+if (2 != 3 || 2 < 0) {
   // ...
 }
 // else if (false) {
