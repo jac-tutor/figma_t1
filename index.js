@@ -1,4 +1,4 @@
-console.log("hello aaaa!")
+// console.log("hello aaaa!")
 
 // 基礎類別
 // 1
@@ -91,21 +91,29 @@ console.log("hello aaaa!")
 // console.log(!true) // false
 
 // + - * / %
-console.log(1 + 2) // 3
-console.log(2 - 1) // 1
-let a = 1
-a = a + 1
-console.log(a) // 2
-a += 1
-a++
-console.log(a)
-console.log(3 % 2) // 1
-console.log("a" + "b") // ab
-console.log(0 + "b") // 0b
-console.log(960 + "110") //
+// console.log(1 + 2) // 3
+// console.log(2 - 1) // 1
+// let a = 1
+// a = a + 1
+// console.log(a) // 2
+// a += 1
+// a++
+// console.log(a)
+// console.log(3 % 2) // 1
+// console.log("a" + "b") // ab
+// console.log(0 + "b") // 0b
+// console.log(960 + "110") //
 
-// for
-for (let i = 0; i < 10; i++) {
-  console.log(i)
+// // for
+// for (let i = 0; i < 10; i++) {
+//   console.log(i)
+// }
+// console.log("end for")
+
+let sum = 0
+for (let i = 1; i <= 10; i++) {
+  if (i % 2 == 1) {
+    sum = sum + i
+  }
 }
-console.log("end for")
+console.log(sum)
