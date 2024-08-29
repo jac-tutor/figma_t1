@@ -116,6 +116,6 @@ console.log("hello world".substring(0, 4));
 var students = JSON.parse(
   `[{"id":"1","name":"jac","birth":"1999-12-03","gender":"male"},{"id":"2","name":"may","birth":"1968-11-15","gender":"female"}]`
 );
-console.log(students);
+console.log(students[0]);
 // for 去console.log 每個學生資料
 // 把每個學生資料算出他幾歲
