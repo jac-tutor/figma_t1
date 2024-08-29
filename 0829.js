@@ -88,7 +88,16 @@
 // console.log(`a${a}b`);
 
 // 原生方法
+console.log("hello world".toUpperCase());
+console.log("hello world".includes("lo"));
+console.log("hello world".concat(" ccy"));
+console.log("hello world".indexOf("o"));
+console.log("9".padStart(2, "0"));
+console.log("hello world".replace("world", "me"));
 console.log("hello world".split(" "));
+// 擷取出hello 5個字
+console.log("hello world".substring(0, 4));
+
 ["1", true, 3];
 {
   a: "a is good";
