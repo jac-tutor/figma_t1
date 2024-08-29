@@ -127,4 +127,4 @@ function square(num, n) {
   }
   return result
 }
-console.log(square(2, 5))
+console.log(square(2, 6))
