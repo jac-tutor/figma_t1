@@ -28,3 +28,13 @@ b = c;
 console.log(a, b);
 
 // p2 設計一個方法，有兩個參數，把比較大的參數回傳
+function max(p1, p2) {
+  if (p1 > p2) {
+    return p1;
+  } else {
+    return p2;
+  }
+}
+console.log(max(10, 20));
+
+// 設計一個計算BMI的方法 weight / (height * height)
