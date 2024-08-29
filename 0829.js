@@ -47,3 +47,6 @@
 // 三角形特性，兩邊相加大於第三邊
 
 // p6 請print出一個99乘法表
+console.log("a" + 10 + "b");
+const a = 10;
+console.log(`a${a}b`);
