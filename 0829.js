@@ -18,7 +18,13 @@
 //     console.log(i)
 // }
 // 快速註解快捷鍵 ctrl(cmd) + /
-let a = 10
-let b = 20
 
-console.log(a, b)
+// p1 變數交換
+let a = 10;
+let b = 20;
+let c = a;
+a = b;
+b = c;
+console.log(a, b);
+
+// p2 設計一個方法，有兩個參數，把比較大的參數回傳
