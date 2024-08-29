@@ -105,7 +105,7 @@ console.log("hello world".substring(0, 4));
 
 //string
 ("1,jac,36,1999-12-03,male;2,may,15,1968-11-15,female;.....");
-// xml
+// xml ajax
 `
 <students>
     <student id="1" name="jac" birth="1999-12-03" gender="male"></student>
@@ -113,7 +113,9 @@ console.log("hello world".substring(0, 4));
 </students>
 `;
 //json
-var datas = [
-  { id: "1", name: "jac", birth: "1999-12-03", gender: "male" },
-  { id: "2", name: "may", birth: "1968-11-15", gender: "female" },
-];
+var students = JSON.parse(
+  `[{"id":"1","name":"jac","birth":"1999-12-03","gender":"male"},{"id":"2","name":"may","birth":"1968-11-15","gender":"female"}]`
+);
+console.log(students);
+// for 去console.log 每個學生資料
+// 把每個學生資料算出他幾歲
