@@ -120,8 +120,18 @@ var students = [
 console.log(students[0]);
 // for 去console.log 每個學生資料
 // 把每個學生資料算出他幾歲
-for (let i = 0; i < students.length; i++) {
-  const student = students[i];
-  student.age = 2024 - +student.birth.substring(0, 4);
-  console.log(student);
-}
+// for (let i = 0; i < students.length; i++) {
+//   const student = students[i];
+//   student.age = 2024 - +student.birth.substring(0, 4);
+//   console.log(student);
+// }
+// students.forEach(function (student) {
+//   student.age = 2024 - +student.birth.substring(0, 4);
+//   console.log(student);
+// });
+
+const newStudents = students.map(function (student) {
+  // console.log(student);
+  return { ...student, age: 2024 - +student.birth.substring(0, 4) };
+});
+console.log(students, newStudents);
