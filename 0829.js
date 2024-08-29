@@ -56,6 +56,10 @@
 
 // p5 設計一個方法，有三個參數，判斷三個長度能否成為一個三角形
 // 三角形特性，兩邊相加大於第三邊
+function isTriangle(a, b, c) {
+  return a + b > c && b + c > a && c + a > b;
+}
+console.log(isTriangle(3, 4, 5));
 
 // p6 請print出一個99乘法表
 console.log("a" + 10 + "b");
