@@ -62,11 +62,11 @@
 // console.log(isTriangle(3, 4, 5));
 
 // p6 請print出一個99乘法表
-for (let i = 1; i < 10; i++) {
-  for (let j = 1; j < 10; j++) {
-    console.log(`${i}*${j}=${i * j}`);
-  }
-}
+// for (let i = 1; i < 10; i++) {
+//   for (let j = 1; j < 10; j++) {
+//     console.log(`${i}*${j}=${i * j}`);
+//   }
+// }
 // *
 // **
 // ***
@@ -86,3 +86,25 @@ for (let i = 1; i < 10; i++) {
 // console.log("a" + 10 + "b");
 // const a = 10;
 // console.log(`a${a}b`);
+
+// 原生方法
+console.log("hello world".split(" "));
+["1", true, 3];
+{
+  a: "a is good";
+}
+
+//string
+("1,jac,36,1999-12-03,male;2,may,15,1968-11-15,female;.....");
+// xml
+`
+<students>
+    <student id="1" name="jac" birth="1999-12-03" gender="male"></student>
+    <student id="2" name="may" birth="1968-11-15" gender="female"></student>
+</students>
+`;
+//json
+var datas = [
+  { id: "1", name: "jac", birth: "1999-12-03", gender: "male" },
+  { id: "2", name: "may", birth: "1968-11-15", gender: "female" },
+];
