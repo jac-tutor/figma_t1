@@ -20,21 +20,30 @@
 // 快速註解快捷鍵 ctrl(cmd) + /
 
 // p1 變數交換
-let a = 10;
-let b = 20;
-let c = a;
-a = b;
-b = c;
-console.log(a, b);
+// let a = 10;
+// let b = 20;
+// let c = a;
+// a = b;
+// b = c;
+// console.log(a, b);
 
 // p2 設計一個方法，有兩個參數，把比較大的參數回傳
-function max(p1, p2) {
-  if (p1 > p2) {
-    return p1;
-  } else {
-    return p2;
-  }
-}
-console.log(max(10, 20));
+// function max(p1, p2) {
+//   if (p1 > p2) {
+//     return p1;
+//   } else {
+//     return p2;
+//   }
+// }
+// console.log(max(10, 20));
 
-// 設計一個計算BMI的方法 weight / (height * height)
+// p3 設計一個計算BMI的方法 weight / (height * height)
+
+// p4 設計一個方法判斷某年份是不是閏年
+// 閏年判斷，該年分是否能被400整除，或者能被4整除，但是不能被100整除
+// 2000 % 4 == 0 代表 2000 可以被 4 整除
+
+// p5 設計一個方法，有三個參數，判斷三個長度能否成為一個三角形
+// 三角形特性，兩邊相加大於第三邊
+
+// p6 請print出一個99乘法表
