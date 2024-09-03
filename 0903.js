@@ -86,26 +86,33 @@
 //   console.log(x, i, arr);
 // });
 
-console.log(
-  Array(10)
-    .fill("")
-    .map((x, i) => i)
-    // .filter(function (x) {
-    //   return x % 2 != 0;
-    // })
-    .filter((x) => x % 2 != 0)
-);
+// console.log(
+//   Array(10)
+//     .fill("")
+//     .map((x, i) => i)
+//     // .filter(function (x) {
+//     //   return x % 2 != 0;
+//     // })
+//     .filter((x) => x % 2 != 0)
+// );
 
-const randNum = Math.random() * 10;
-console.log(randNum);
-console.log(Math.round(randNum));
-console.log(Math.floor(randNum));
-console.log(Math.ceil(randNum));
+// const randNum = Math.random() * 10;
+// console.log(randNum);
+// console.log(Math.round(randNum)); // 0~10
+// console.log(Math.floor(randNum)); // 0~9
+// console.log(Math.ceil(randNum)); // 1~10
 
 // 練習把0-9陣列打亂
-Array(10)
+const arr = Array(10)
   .fill("")
   .map((x, i) => i);
+arr.forEach((x, i) => {
+  let c = arr[i];
+  let rand = Math.floor(Math.random() * arr.length);
+  arr[i] = arr[rand];
+  arr[rand] = c;
+});
+console.log(arr);
 
 const datas = [
   {
