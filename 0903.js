@@ -199,18 +199,22 @@ const datas = [
 
 const newStudents = datas.map((x) => {
   return {
-    id: x.id,
-    first_name: x.first_name,
-    last_name: x.last_name,
-    phone: x.phone,
-    birthday: x.birthday,
-    gender: x.gender,
+    // id: x.id,
+    // first_name: x.first_name,
+    // last_name: x.last_name,
+    // phone: x.phone,
+    // birthday: x.birthday,
+    // gender: x.gender,
+    ...x,
     get age() {
       return new Date().getFullYear() - x.birthday.substring(0, 4);
+    },
+    get full_name() {
+      return x.last_name + x.first_name;
     },
     //   ...x,
   };
 });
-console.log(newStudents.filter((x) => x.age < 30));
-
+// console.log(newStudents.filter((x) => x.age < 30));
+console.log(newStudents.map((x) => x.full_name));
 // getter full_name要怎麼做
