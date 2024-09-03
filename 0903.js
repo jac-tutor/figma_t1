@@ -28,6 +28,17 @@
 // );
 
 // 練習1 "hello world"找出o的所有索引值
+function findWordIndex(targetWord) {
+  let result = [];
+  "hello world".split("").forEach(function (word, index) {
+    if (word == targetWord) {
+      result.push(index);
+      // result = result.concat(index)
+    }
+  });
+  return result;
+}
+console.log(findWordIndex("d"));
 // 練習2 "gave a nice day" 把所有文字第一個字變成大寫
 "a".toUpperCase();
 "hello world".split(" ");
@@ -41,12 +52,12 @@
 // };
 // const funcA = (a, b) => a + b;
 
-function forEach(arr, doFn) {
-  for (let i = 0; i < arr.length; i++) {
-    doFn(arr[i], i, arr);
-  }
-}
+// function forEach(arr, doFn) {
+//   for (let i = 0; i < arr.length; i++) {
+//     doFn(arr[i], i, arr);
+//   }
+// }
 
-forEach([1, 2, 3], function (x, i, arr) {
-  console.log(x, i, arr);
-});
+// forEach([1, 2, 3], function (x, i, arr) {
+//   console.log(x, i, arr);
+// });
