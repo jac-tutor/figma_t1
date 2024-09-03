@@ -39,9 +39,33 @@ function findWordIndex(targetWord) {
   return result;
 }
 console.log(findWordIndex("d"));
-// 練習2 "gave a nice day" 把所有文字第一個字變成大寫
-"a".toUpperCase();
-"hello world".split(" ");
+// 練習2 "have a nice day" 把所有文字第一個字變成大寫
+console.log(
+  "have a nice day"
+    .split(" ")
+    .map(function (word) {
+      return word[0].toUpperCase() + word.substring(1);
+    })
+    .join(" ")
+);
+let needUpper = true;
+console.log(
+  "have a nice day"
+    .split("")
+    .map(function (word) {
+      if (needUpper) {
+        needUpper = false;
+        return word.toUpperCase();
+      }
+      if (word == " ") {
+        needUpper = true;
+      }
+      return word;
+    })
+    .join("")
+);
+// "a".toUpperCase();
+// "hello world".split(" ");
 
 // function funcA(a) {
 //   return a;
