@@ -96,9 +96,11 @@ console.log(
     .filter((x) => x % 2 != 0)
 );
 
-console.log(Math.round(Math.random() * 10));
-console.log(Math.floor(Math.random() * 10));
-console.log(Math.ceil(Math.random() * 10));
+const randNum = Math.random() * 10;
+console.log(randNum);
+console.log(Math.round(randNum));
+console.log(Math.floor(randNum));
+console.log(Math.ceil(randNum));
 
 // 練習把0-9陣列打亂
 Array(10)
