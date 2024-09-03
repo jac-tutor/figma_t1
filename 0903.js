@@ -212,3 +212,5 @@ const newStudents = datas.map((x) => {
   };
 });
 console.log(newStudents.filter((x) => x.age < 30));
+
+// getter full_name要怎麼做
