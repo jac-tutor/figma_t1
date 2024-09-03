@@ -219,21 +219,31 @@ const newStudents = datas.map((x) => {
 // console.log(newStudents.map((x) => x.full_name));
 // getter full_name要怎麼做
 
-const arr = Array(10)
-  .fill("")
-  .map(() => Math.round(Math.random() * 10));
-console.log(
-  arr,
-  arr.reduce((sum, val) => {
-    return sum + val;
-  }, 0)
-);
-console.log(
-  arr.reduce((result, val) => {
-    if (!result[val]) result[val] = 0;
-    result[val]++;
-    return result;
-  }, {})
-);
+// const arr = Array(10)
+//   .fill("")
+//   .map(() => Math.round(Math.random() * 10));
+// console.log(
+//   arr,
+//   arr.reduce((sum, val) => {
+//     return sum + val;
+//   }, 0)
+// );
+// console.log(
+//   arr.reduce((result, val) => {
+//     if (!result[val]) result[val] = 0;
+//     result[val]++;
+//     return result;
+//   }, {})
+// );
 
 // p6 統計亂數陣列裡面每個數字個出現幾次
+let i = 0;
+let timer = setInterval(() => {
+  console.log("interval" + i++);
+  if (i > 5) {
+    clearInterval(timer);
+  }
+}, 1000);
+setTimeout(() => {
+  console.log("time out");
+}, 1000);
