@@ -90,10 +90,21 @@ console.log(
   Array(10)
     .fill("")
     .map((x, i) => i)
-    .filter(function (x) {
-      return false;
-    })
+    // .filter(function (x) {
+    //   return x % 2 != 0;
+    // })
+    .filter((x) => x % 2 != 0)
 );
+
+console.log(Math.round(Math.random() * 10));
+console.log(Math.floor(Math.random() * 10));
+console.log(Math.ceil(Math.random() * 10));
+
+// 練習把0-9陣列打亂
+Array(10)
+  .fill("")
+  .map((x, i) => i);
+
 const datas = [
   {
     id: 1,
