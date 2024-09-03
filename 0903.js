@@ -216,5 +216,5 @@ const newStudents = datas.map((x) => {
   };
 });
 // console.log(newStudents.filter((x) => x.age < 30));
-console.log(newStudents.map((x) => x.full_name));
+// console.log(newStudents.map((x) => x.full_name));
 // getter full_name要怎麼做
