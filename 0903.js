@@ -103,16 +103,16 @@
 // console.log(Math.ceil(randNum)); // 1~10
 
 // 練習把0-9陣列打亂
-const arr = Array(10)
-  .fill("")
-  .map((x, i) => i);
-arr.forEach((x, i) => {
-  let c = arr[i];
-  let rand = Math.floor(Math.random() * arr.length);
-  arr[i] = arr[rand];
-  arr[rand] = c;
-});
-console.log(arr);
+// const arr = Array(10)
+//   .fill("")
+//   .map((x, i) => i);
+// arr.forEach((x, i) => {
+//   let c = arr[i];
+//   let rand = Math.floor(Math.random() * arr.length);
+//   arr[i] = arr[rand];
+//   arr[rand] = c;
+// });
+// console.log(arr);
 
 const datas = [
   {
@@ -196,3 +196,19 @@ const datas = [
     gender: "男",
   },
 ];
+
+const newStudents = datas.map((x) => {
+  return {
+    id: x.id,
+    first_name: x.first_name,
+    last_name: x.last_name,
+    phone: x.phone,
+    birthday: x.birthday,
+    gender: x.gender,
+    get age() {
+      return new Date().getFullYear() - x.birthday.substring(0, 4);
+    },
+    //   ...x,
+  };
+});
+console.log(newStudents.filter((x) => x.age < 30));
