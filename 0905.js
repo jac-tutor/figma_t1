@@ -198,6 +198,9 @@ new Promise((resolve, reject) => {
   resolve(1)
 }).then((x) => console.log(x))
 
-fetch("https://data.ntpc.gov.tw/api/datasets/308dcd75-6434-45bc-a95f-584da4fed251/json", {})
+fetch("http://localhost:8099/decrypt", {
+  method: "POST",
+  body: JSON.stringify({ encodedText: "U2FsdGVkX18Nylwmde9NNn23NOU09i5DoB9+FHXt1SM=" }),
+})
   .then((res) => res.json())
   .then((res) => console.log(res))
