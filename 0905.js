@@ -64,107 +64,107 @@
 //   30: [{...}],
 //   33: [{...}, {...}]
 // }
-// const datas = [
-//   {
-//     id: 1,
-//     first_name: "佳穎",
-//     last_name: "陳",
-//     phone: "0987654321",
-//     birthday: "1985-03-15",
-//     gender: "女",
-//   },
-//   {
-//     id: 2,
-//     first_name: "宇軒",
-//     last_name: "林",
-//     phone: "0912345678",
-//     birthday: "1992-07-22",
-//     gender: "男",
-//   },
-//   {
-//     id: 3,
-//     first_name: "雅婷",
-//     last_name: "黃",
-//     phone: "0923456789",
-//     birthday: "1988-11-30",
-//     gender: "女",
-//   },
-//   {
-//     id: 4,
-//     first_name: "冠宇",
-//     last_name: "張",
-//     phone: "0934567890",
-//     birthday: "1995-01-05",
-//     gender: "男",
-//   },
-//   {
-//     id: 5,
-//     first_name: "芳瑜",
-//     last_name: "李",
-//     phone: "0945678901",
-//     birthday: "1982-09-18",
-//     gender: "女",
-//   },
-//   {
-//     id: 6,
-//     first_name: "柏翰",
-//     last_name: "王",
-//     phone: "0956789012",
-//     birthday: "1998-06-27",
-//     gender: "男",
-//   },
-//   {
-//     id: 7,
-//     first_name: "怡君",
-//     last_name: "吳",
-//     phone: "0967890123",
-//     birthday: "1990-04-11",
-//     gender: "女",
-//   },
-//   {
-//     id: 8,
-//     first_name: "志偉",
-//     last_name: "劉",
-//     phone: "0978901234",
-//     birthday: "1987-12-03",
-//     gender: "男",
-//   },
-//   {
-//     id: 9,
-//     first_name: "淑芬",
-//     last_name: "蔡",
-//     phone: "0989012345",
-//     birthday: "1993-08-20",
-//     gender: "女",
-//   },
-//   {
-//     id: 10,
-//     first_name: "俊傑",
-//     last_name: "楊",
-//     phone: "0990123456",
-//     birthday: "1997-02-14",
-//     gender: "男",
-//   },
-// ]
+const datas = [
+  {
+    id: 1,
+    first_name: "佳穎",
+    last_name: "陳",
+    phone: "0987654321",
+    birthday: "1985-03-15",
+    gender: "女",
+  },
+  {
+    id: 2,
+    first_name: "宇軒",
+    last_name: "林",
+    phone: "0912345678",
+    birthday: "1992-07-22",
+    gender: "男",
+  },
+  {
+    id: 3,
+    first_name: "雅婷",
+    last_name: "黃",
+    phone: "0923456789",
+    birthday: "1988-11-30",
+    gender: "女",
+  },
+  {
+    id: 4,
+    first_name: "冠宇",
+    last_name: "張",
+    phone: "0934567890",
+    birthday: "1995-01-05",
+    gender: "男",
+  },
+  {
+    id: 5,
+    first_name: "芳瑜",
+    last_name: "李",
+    phone: "0945678901",
+    birthday: "1982-09-18",
+    gender: "女",
+  },
+  {
+    id: 6,
+    first_name: "柏翰",
+    last_name: "王",
+    phone: "0956789012",
+    birthday: "1998-06-27",
+    gender: "男",
+  },
+  {
+    id: 7,
+    first_name: "怡君",
+    last_name: "吳",
+    phone: "0967890123",
+    birthday: "1990-04-11",
+    gender: "女",
+  },
+  {
+    id: 8,
+    first_name: "志偉",
+    last_name: "劉",
+    phone: "0978901234",
+    birthday: "1987-12-03",
+    gender: "男",
+  },
+  {
+    id: 9,
+    first_name: "淑芬",
+    last_name: "蔡",
+    phone: "0989012345",
+    birthday: "1993-08-20",
+    gender: "女",
+  },
+  {
+    id: 10,
+    first_name: "俊傑",
+    last_name: "楊",
+    phone: "0990123456",
+    birthday: "1997-02-14",
+    gender: "男",
+  },
+]
 
-// const newStudents = datas.map((x) => {
-//   return {
-//     // id: x.id,
-//     // first_name: x.first_name,
-//     // last_name: x.last_name,
-//     // phone: x.phone,
-//     // birthday: x.birthday,
-//     // gender: x.gender,
-//     ...x,
-//     get age() {
-//       return new Date().getFullYear() - x.birthday.substring(0, 4)
-//     },
-//     get full_name() {
-//       return x.last_name + x.first_name
-//     },
-//     //   ...x,
-//   }
-// })
+const newStudents = datas.map((x) => {
+  return {
+    // id: x.id,
+    // first_name: x.first_name,
+    // last_name: x.last_name,
+    // phone: x.phone,
+    // birthday: x.birthday,
+    // gender: x.gender,
+    ...x,
+    get age() {
+      return new Date().getFullYear() - x.birthday.substring(0, 4)
+    },
+    get full_name() {
+      return x.last_name + x.first_name
+    },
+    //   ...x,
+  }
+})
 
 // console.log(
 //   newStudents.reduce((result, x) => {
@@ -181,3 +181,10 @@
 //   "0~10": [{...}],
 //   "11~20": [{...}, {...}]
 // }
+// console.log([1, 2, 3, 4, 5, 6].includes(6)) // true
+console.log(newStudents.some((x) => x.age > 30))
+console.log([1, 2, 3, 4, 5, 6].some((x) => x > 5))
+console.log([1, 2, 3, 4, 5, 6].every((x) => x > 5))
+console.log([1, 2, 3, 4, 5, 6].reverse())
+
+// p2 "hello world" 倒過來排列
