@@ -205,7 +205,7 @@ const newStudents = datas.map((x) => {
 //   .then((res) => res.json())
 //   .then((res) => console.log(res))
 
-const $app = document.querySelector("#app")
+// const $app = document.querySelector("#app")
 // console.log($app.innerHTML)
 // $app.innerHTML = `<span>hello</span>`
 // console.log($app.innerHTML)
@@ -215,10 +215,10 @@ const $app = document.querySelector("#app")
 // $app.classList.remove("active")
 
 // $app.style.backgroundColor = "red"
-$app.onclick = () => {
-  // alert("click me")
-  $app.classList.toggle("active")
-}
+// $app.onclick = () => {
+//   // alert("click me")
+//   $app.classList.toggle("active")
+// }
 // $app.addEventListener("click", () => {
 //   alert("click me twice")
 // })
@@ -234,3 +234,48 @@ $app.onclick = () => {
 // // mouseleave
 // // mousemove
 // // mouseover
+
+// const $content = document.querySelector("#htmlContent")
+// const $mulY = document.querySelector("#mulY")
+// const $mulX = document.querySelector("#mulX")
+
+// $mulY.onkeyup = $mulX.onkeyup = () => {
+//   const mulYValue = $mulY.value
+//   const mulXValue = $mulX.value
+//   let html = "<table border='1' style='width: 100%'>"
+//   for (let i = 1; i <= mulYValue; i++) {
+//     html += "<tr>"
+//     for (let j = 1; j <= mulXValue; j++) {
+//       html += `<td>${i * j}</td>`
+//     }
+//     html += "</tr>"
+//   }
+//   html += "</table>"
+//   $content.innerHTML = html
+// }
+
+const $mulY = document.querySelector("#mulY")
+const $mulX = document.querySelector("#mulX")
+const $html = document.querySelector("#html")
+
+const render = () => {
+  const mulYValue = $mulY.value
+  const mulXValue = $mulX.value
+  let html = "<table border='1' style='width: 100%'>"
+  for (let y = 1; y <= mulYValue; y++) {
+    html += "<tr>"
+    for (let x = 1; x <= mulXValue; x++) {
+      html += `<td>${x * y}</td>`
+    }
+    html += "</tr>"
+  }
+  html += "</table>"
+  $html.innerHTML = html
+}
+// $mulY.onchange = $mulX.onchange = render
+$mulY.onchange = render
+$mulX.onchange = render
+
+// mvvm
+
+// vue(尤雨溪), angular(google), react(facebook, jsx)
