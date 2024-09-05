@@ -204,5 +204,30 @@ const newStudents = datas.map((x) => {
 // })
 //   .then((res) => res.json())
 //   .then((res) => console.log(res))
-console.log(document.querySelector("#app").innerHTML)
-document.querySelector("#app").innerHTML = `hello`
+const $app = document.querySelector("#app")
+console.log($app.innerHTML)
+$app.innerHTML = `<span>hello</span>`
+console.log($app.innerHTML)
+console.log($app.textContent)
+$app.classList.add("active")
+$app.classList.add("active2")
+$app.classList.remove("active")
+$app.style.backgroundColor = "red"
+$app.onclick = () => {
+  alert("click me")
+}
+$app.addEventListener("click", () => {
+  alert("click me twice")
+})
+// // keyup
+// // keydown
+// // keypress
+// // focus
+// // blur
+// // change
+// // input
+// // select
+// // mouseenter
+// // mouseleave
+// // mousemove
+// // mouseover
