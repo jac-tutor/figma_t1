@@ -182,10 +182,22 @@ const newStudents = datas.map((x) => {
 //   "11~20": [{...}, {...}]
 // }
 // console.log([1, 2, 3, 4, 5, 6].includes(6)) // true
-console.log(newStudents.some((x) => x.age > 30))
-console.log([1, 2, 3, 4, 5, 6].some((x) => x > 5))
-console.log([1, 2, 3, 4, 5, 6].every((x) => x > 5))
-console.log([1, 2, 3, 4, 5, 6].reverse())
+// console.log(newStudents.some((x) => x.age > 30))
+// console.log([1, 2, 3, 4, 5, 6].some((x) => x > 5))
+// console.log([1, 2, 3, 4, 5, 6].every((x) => x > 5))
+// console.log([1, 2, 3, 4, 5, 6].reverse())
 
-// p2 "hello world" 倒過來排列
-console.log("hello world".split("").reverse().join(""))
+// // p2 "hello world" 倒過來排列
+// console.log("hello world".split("").reverse().join(""))
+
+setTimeout(() => {
+  console.log("timeout")
+})
+console.log("hello world")
+new Promise((resolve, reject) => {
+  resolve(1)
+}).then((x) => console.log(x))
+
+fetch("https://data.ntpc.gov.tw/api/datasets/308dcd75-6434-45bc-a95f-584da4fed251/json", {})
+  .then((res) => res.json())
+  .then((res) => console.log(res))
