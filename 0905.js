@@ -204,21 +204,24 @@ const newStudents = datas.map((x) => {
 // })
 //   .then((res) => res.json())
 //   .then((res) => console.log(res))
+
 const $app = document.querySelector("#app")
-console.log($app.innerHTML)
-$app.innerHTML = `<span>hello</span>`
-console.log($app.innerHTML)
-console.log($app.textContent)
-$app.classList.add("active")
-$app.classList.add("active2")
-$app.classList.remove("active")
-$app.style.backgroundColor = "red"
+// console.log($app.innerHTML)
+// $app.innerHTML = `<span>hello</span>`
+// console.log($app.innerHTML)
+// console.log($app.textContent)
+// $app.classList.add("active")
+// $app.classList.add("active2")
+// $app.classList.remove("active")
+
+// $app.style.backgroundColor = "red"
 $app.onclick = () => {
-  alert("click me")
+  // alert("click me")
+  $app.classList.toggle("active")
 }
-$app.addEventListener("click", () => {
-  alert("click me twice")
-})
+// $app.addEventListener("click", () => {
+//   alert("click me twice")
+// })
 // // keyup
 // // keydown
 // // keypress
