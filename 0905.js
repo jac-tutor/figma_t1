@@ -190,17 +190,19 @@ const newStudents = datas.map((x) => {
 // // p2 "hello world" 倒過來排列
 // console.log("hello world".split("").reverse().join(""))
 
-setTimeout(() => {
-  console.log("timeout")
-})
-console.log("hello world")
-new Promise((resolve, reject) => {
-  resolve(1)
-}).then((x) => console.log(x))
+// setTimeout(() => {
+//   console.log("timeout")
+// })
+// console.log("hello world")
+// new Promise((resolve, reject) => {
+//   resolve(1)
+// }).then((x) => console.log(x))
 
-fetch("http://localhost:8099/decrypt", {
-  method: "POST",
-  body: JSON.stringify({ encodedText: "U2FsdGVkX18Nylwmde9NNn23NOU09i5DoB9+FHXt1SM=" }),
-})
-  .then((res) => res.json())
-  .then((res) => console.log(res))
+// fetch("http://localhost:8099/decrypt", {
+//   method: "POST",
+//   body: JSON.stringify({ encodedText: "U2FsdGVkX18Nylwmde9NNn23NOU09i5DoB9+FHXt1SM=" }),
+// })
+//   .then((res) => res.json())
+//   .then((res) => console.log(res))
+console.log(document.querySelector("#app").innerHTML)
+document.querySelector("#app").innerHTML = `hello`
