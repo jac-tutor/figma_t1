@@ -188,3 +188,4 @@ console.log([1, 2, 3, 4, 5, 6].every((x) => x > 5))
 console.log([1, 2, 3, 4, 5, 6].reverse())
 
 // p2 "hello world" 倒過來排列
+console.log("hello world".split("").reverse().join(""))
