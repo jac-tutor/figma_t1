@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Marker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 參考網站：https://www.letswrite.tw/google-map-api-marker-custom/ -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key={YOUR_API_KEY}&callback=console.debug&libraries=maps,marker&v=beta"></script>
+  </head>
+  <body class="p-4">
+    <button type="button" class="px-4 py-2 mr-2 rounded bg-gray-600 text-white" id="location1">Location1</button>
+    <button type="button" class="px-4 py-2 mr-2 rounded bg-gray-600 text-white" id="location2">Location2</button>
+    <div class="w-[500px] h-[500px] mt-4 location1">
+      <gmp-map center="25.0374865,121.5647688" zoom="16" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="25.0374865,121.5647688" title="My location"></gmp-advanced-marker>
+      </gmp-map>
+    </div>
+    <div class="w-[500px] h-[500px] mt-4 location2 hidden">
+      <gmp-map center="24.1387431,120.6615642" zoom="16" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="24.1387431,120.6615642" title="My location"></gmp-advanced-marker>
+      </gmp-map>
+    </div>
+    <script>
+      document.getElementById("location1").addEventListener("click", () => {
+        document.querySelector(".location1").classList.remove("hidden")
+        document.querySelector(".location2").classList.add("hidden")
+      })
+      document.getElementById("location2").addEventListener("click", () => {
+        document.querySelector(".location1").classList.add("hidden")
+        document.querySelector(".location2").classList.remove("hidden")
+      })
+    </script>
+  </body>
+</html>
