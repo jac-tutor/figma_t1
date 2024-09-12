@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    @keyframes flip-card {
+      from {
+        background: url(../jay/images/member/1.png) no-repeat;
+      }
+      24% {
+        background: url(../jay/images/member/1.png) no-repeat;
+        transform: scaleX(0);
+      }
+      25% {
+        transform: scaleX(0);
+        background: url(../jay/images/member/2.png) no-repeat;
+      }
+      50% {
+        transform: scaleX(-1);
+      }
+      74% {
+        transform: scaleX(0);
+        background: url(../jay/images/member/2.png) no-repeat;
+      }
+      75% {
+        transform: scaleX(0);
+        background: url(../jay/images/member/1.png) no-repeat;
+      }
+      100% {
+        transform: scaleX(1);
+        background: url(../jay/images/member/1.png) no-repeat;
+      }
+    }
+    .image-container {
+      animation: flip-card 5s infinite;
+    }
+  </style>
+  <body>
+    <div class="image-container inline-block">
+      <img class="invisible" src="../jay/images/member/1.png" alt="" srcset="" />
+    </div>
+  </body>
+</html>
