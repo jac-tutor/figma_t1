@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TailwindCssTest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .image-target {
+        opacity: 0;
+        transition: all 0.5s ease-in;
+        z-index: 100;
+      }
+      .image-container:hover {
+        .image-target {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container relative">
+      <img
+        class="w-1/4 absolute top-0 left-0"
+        src="https://images.theconversation.com/files/38926/original/5cwx89t4-1389586191.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=926&fit=clip"
+      />
+      <img class="w-1/2 image-target absolute top-0 left-0" src="https://img.delicious.com.au/WqbvXLhs/del/2016/06/more-the-merrier-31380-2.jpg" />
+    </div>
+  </body>
+</html>
