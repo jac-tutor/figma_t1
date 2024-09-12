@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Geolocation</title>
+
+    <script type="module">
+      let map
+      let location1 = {
+        lat: 25.0374865, // 經度
+        lng: 121.5647688, // 緯度
+      }
+      let location2 = {
+        lat: 24.1387431,
+        lng: 120.6615642,
+      }
+      function initMap() {
+        // 建立地圖
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: location1, // 中心點座標
+          zoom: 16, // 1-20，數字愈大，地圖愈細：1是世界地圖，20就會到街道
+          mapTypeId: "terrain",
+        })
+
+        let marker1 = new google.maps.Marker({
+          position: location1,
+          map: map,
+        })
+        let marker2 = new google.maps.Marker({
+          position: location2,
+          map: map,
+        })
+      }
+
+      window.initMap = initMap
+
+      window.showLocation1 = () => {
+        // console.log(map)
+        map.setCenter(location1)
+      }
+      window.showLocation2 = () => {
+        // console.log("location2")
+        map.setCenter(location2)
+      }
+    </script>
+  </head>
+  <body>
+    <button type="button" class="px-4 py-2 mr-2 rounded bg-gray-600 text-white" id="location1" onclick="showLocation1()">Location1</button>
+    <button type="button" class="px-4 py-2 mr-2 rounded bg-gray-600 text-white" id="location2" onclick="showLocation2()">Location2</button>
+    <div id="map" class="w-[500px] h-[500px] mt-4"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly" defer></script>
+  </body>
+</html>
